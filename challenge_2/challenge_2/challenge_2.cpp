@@ -14,6 +14,11 @@ int main()
     vector1.push_back(10);
     vector1.push_back(20);
 
+    cout << vector1.at(0) << endl;
+    cout << vector1.at(1) << endl;
+
+    cout << vector1.size() << endl;
+
 
     
     vector <int> vector2{};
