@@ -48,16 +48,25 @@ int main()
     cout << vector_2d.at(0).at(1) << endl;
     cout << vector_2d.at(1).at(0) << endl;
     cout << vector_2d.at(1).at(1) << endl;
-   
+
+       
     //Change vector1 at(0) to 1000
     int new_value = 1000;
-    cout << new_value << endl;
-    cin >> vector1.at(0);
+    vector1.at(0) = new_value;
+    cout << vector1.at(0);
 
     cout << "\nUpdated:" << endl;
     cout << vector1.at(0) << endl;
 
-    
+    cout << "\nThe results of Vector 2D again are" << endl;
+    cout << vector_2d.at(0).at(0) << endl;
+    cout << vector_2d.at(0).at(1) << endl;
+    cout << vector_2d.at(1).at(0) << endl;
+    cout << vector_2d.at(1).at(1) << endl;
+
+    cout << "\nThe elements on vector 1 are:" << endl;
+    cout << vector1.at(0) << endl;
+    cout << vector1.at(1) << endl;
    
 
 
