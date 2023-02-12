@@ -33,7 +33,6 @@ int main()
 
     vector <vector<int>> vector_2d;
         
-   
     //Adding vector1 to vector_2d dynamically
     vector_2d.push_back(vector1);
     vector_2d.push_back(vector2);
