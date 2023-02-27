@@ -19,18 +19,31 @@ int main()
 
 	cout << "Enter an amount in cents: ";
 	cin >> amount;
-	//left_over = amount;
+	left_over = amount;
 
 	numberof_quarter = (amount / quarter);
 	left_over = left_over % quarter;
+
+	numberof_dime = (left_over / dime);
+	left_over = left_over % dime;
+
+	numberof_nickel = (left_over / nickel);
+	left_over = left_over % nickel;
+
+
+	
+
 	
 	
 	
 	
 	
 	
-	
-	cout << numberof_quarter << endl;
+	cout << "\nquarters: " << numberof_quarter << "\ndimes: " << numberof_dime 
+		 << "\nnickels: " << numberof_nickel << 
+		endl;
+
+
 	cout << left_over << endl;
 
 
