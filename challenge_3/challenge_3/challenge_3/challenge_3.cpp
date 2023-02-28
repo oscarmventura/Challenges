@@ -36,7 +36,8 @@ int main()
 
 	numberof_penny = (left_over / penny);
 	left_over = (left_over % penny);
-		
+	
+	cout << "Return the following change: " << endl;
 	cout << "\ndollars: " << numberof_dollar
 		 <<	"\nquarters: " << numberof_quarter 
 		 << "\ndimes: " << numberof_dime
@@ -45,16 +46,8 @@ int main()
 		 <<	endl;
 
 
-	cout << "Left over: " << left_over << endl;
-
-
-
+	cout << "\n\nLeft over: " << left_over << endl;
 	return 0;
-
-
-
-	
-
 
 }
 
