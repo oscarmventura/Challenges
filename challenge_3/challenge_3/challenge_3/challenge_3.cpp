@@ -7,6 +7,7 @@ using namespace std;
 
 int main()
 {
+	const int dollar = 100;
 	const int quarter = 25;
 	const int dime = 10;
 	const int nickel = 5;
@@ -14,14 +15,17 @@ int main()
 
 	int amount { 0 };
 	int left_over{ 0 };
-	int numberof_quarter, numberof_dime, numberof_nickel, numberof_penny;
+	int numberof_dollar, numberof_quarter, numberof_dime, numberof_nickel, numberof_penny;
 
 
 	cout << "Enter an amount in cents: ";
 	cin >> amount;
 	left_over = amount;
 
-	numberof_quarter = (amount / quarter);
+	numberof_dollar = (amount / dollar);
+	left_over = left_over % dollar;
+
+	numberof_quarter = (left_over / quarter);
 	left_over = left_over % quarter;
 
 	numberof_dime = (left_over / dime);
@@ -33,7 +37,8 @@ int main()
 	numberof_penny = (left_over / penny);
 	left_over = (left_over % penny);
 		
-	cout << "\nquarters: " << numberof_quarter << "\ndimes: " << numberof_dime 
+	cout << "\ndollars: " << numberof_dollar
+		 <<	"\nquarters: " << numberof_quarter << "\ndimes: " << numberof_dime 
 		 << "\nnickels: " << numberof_nickel << "\npennys: " << numberof_penny 
 		 <<	endl;
 
