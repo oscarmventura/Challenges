@@ -30,21 +30,15 @@ int main()
 	numberof_nickel = (left_over / nickel);
 	left_over = left_over % nickel;
 
-
-	
-
-	
-	
-	
-	
-	
-	
+	numberof_penny = (left_over / penny);
+	left_over = (left_over % penny);
+		
 	cout << "\nquarters: " << numberof_quarter << "\ndimes: " << numberof_dime 
-		 << "\nnickels: " << numberof_nickel << 
-		endl;
+		 << "\nnickels: " << numberof_nickel << "\npennys: " << numberof_penny 
+		 <<	endl;
 
 
-	cout << left_over << endl;
+	cout << "Left over: " << left_over << endl;
 
 
 
