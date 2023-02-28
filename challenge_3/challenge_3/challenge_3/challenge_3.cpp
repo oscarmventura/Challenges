@@ -38,8 +38,10 @@ int main()
 	left_over = (left_over % penny);
 		
 	cout << "\ndollars: " << numberof_dollar
-		 <<	"\nquarters: " << numberof_quarter << "\ndimes: " << numberof_dime 
-		 << "\nnickels: " << numberof_nickel << "\npennys: " << numberof_penny 
+		 <<	"\nquarters: " << numberof_quarter 
+		 << "\ndimes: " << numberof_dime
+		 << "\nnickels: " << numberof_nickel 
+		 << "\npennys: " << numberof_penny
 		 <<	endl;
 
 
